@@ -1,0 +1,35 @@
+import { NgModule }             from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './user/dashboard/dashboard.component'
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { MypoolComponent } from './user/mypool/mypool.component';
+import { CreatepoolComponent } from './user/createpool/createpool.component';
+import { FindpoolComponent } from './user/findpool/findpool.component';
+import { NotificationComponent } from './user/notification/notification.component';
+
+
+const routes: Routes = [
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
+    { path: 'login', component: LoginComponent },
+    { path: 'admin', component: AdminComponent },
+    { path: 'myprofile', component: MyprofileComponent },
+    { path: 'user', component: UserComponent ,
+        children: [
+                    { path: 'dashboard', component: DashboardComponent },
+                    { path: 'mypool', component: MypoolComponent },
+                    { path: 'createpool', component: CreatepoolComponent },
+                    { path: 'findpool', component: FindpoolComponent },
+                    { path: 'notification', component: NotificationComponent }
+        ]
+    }
+];                            
+
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+export class AppRoutingModule {}
