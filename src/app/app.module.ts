@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing.module';
-import {GoogleSignInComponent} from 'angular-google-signin';
+import { GoogleSignInComponent} from 'angular-google-signin';
 
 
 import { AppComponent } from './app.component';

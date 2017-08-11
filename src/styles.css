@@ -1,4 +1,4 @@
-body{
-    background-image: url("./assets/Images/Background.png");
-    background-size: cover ;
+*{
+    margin: 0;
+    padding: 0px;
 }
