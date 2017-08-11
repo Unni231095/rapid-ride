@@ -1,8 +1,9 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './user/dashboard/dashboard.component'
 import { MyprofileComponent } from './myprofile/myprofile.component';
@@ -15,6 +16,7 @@ import { NotificationComponent } from './user/notification/notification.componen
 const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
+    { path: 'registration', component: RegistrationComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'myprofile', component: MyprofileComponent },
     { path: 'user', component: UserComponent ,
@@ -26,7 +28,7 @@ const routes: Routes = [
                     { path: 'notification', component: NotificationComponent }
         ]
     }
-];                            
+];
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
