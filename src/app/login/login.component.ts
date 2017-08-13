@@ -16,16 +16,17 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-  private myClientId: string = '1090480001206-65j6qj246c6jupnukeof4mp230maugij.apps.googleusercontent.com';
+  // tslint:disable-next-line:member-ordering
+  private myClientId = '1090480001206-65j6qj246c6jupnukeof4mp230maugij.apps.googleusercontent.com';
   /*
    * @desc Sign in with google api
    * @param {Object} event return from the google sign in process
    * @author Unnikrishnan M
    */
   onGoogleSignInSuccess(event: GoogleSignInSuccess) {
-    let googleUser: gapi.auth2.GoogleUser = event.googleUser;
-    let id: string = googleUser.getId();
-    let profile: gapi.auth2.BasicProfile = googleUser.getBasicProfile();
+    const googleUser: gapi.auth2.GoogleUser = event.googleUser;
+    const id: string = googleUser.getId();
+    const profile: gapi.auth2.BasicProfile = googleUser.getBasicProfile();
     console.log('ID: ' +   profile.getId()); // Do not send to your backend! Use an ID token instead.
     console.log('Name: ' + profile.getName());
     console.log('Image:' + profile.getImageUrl());
