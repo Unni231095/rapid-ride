@@ -15,6 +15,8 @@ import { CreatepoolComponent } from './user/createpool/createpool.component';
 import { FindpoolComponent } from './user/findpool/findpool.component';
 import { NotificationComponent } from './user/notification/notification.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { PoollistComponent } from './user/poollist/poollist.component';
+import { PooldetailsComponent } from './user/pooldetails/pooldetails.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { RegistrationComponent } from './registration/registration.component';
     CreatepoolComponent,
     FindpoolComponent,
     NotificationComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    PoollistComponent,
+    PooldetailsComponent
   ],
   imports: [
     BrowserModule,

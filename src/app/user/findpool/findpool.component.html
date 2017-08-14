@@ -1,3 +1,26 @@
-<p>
-  findpool works!
-</p>
+<div class="findpool-container">
+  <div class="findpoolBox">
+    <h1 align='center'>Find Pool</h1>
+    <div class="form-group">
+      <label for="from">From:</label>
+      <input class="form-control" id="from" type="text" name="from" placeholder="Your Location">
+    </div>
+    <div class="form-group">
+      <label for="to">To</label>
+      <input class="form-control" id="to" type="text" name="to" placeholder="Destination">
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input class="form-control" type="date" id="date" name="date" placeholder="Enter Date">
+    </div>
+    <div class="form-group">
+      <label for="time">Time</label>
+      <input class="form-control" type="time" id="time" name="time" placeholder="Enter Time">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn fnd btn-success" (click)=gotoPoolList()>Find</button>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn bck btn-success" (click)=gotoDashboard()>Back</button>
+    </div>
+  <div>

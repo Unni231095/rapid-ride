@@ -1,18 +1,13 @@
-body {
-  width: 100%;
-  height: 100%;
-}
-
-.findpool-container{
+.poollist-container{
   position: absolute;
   width : 100%;
   height : 100%;
 }
 
-.findpoolBox{
+.poollistBox{
   position: relative;
   width: 600px;
-  height: 400px;
+  height: 296px;
   background-color: #ccc;
   border-radius: 5px;
   top: 50%;
@@ -20,18 +15,19 @@ body {
   margin-top: -200px;
   margin-left: -300px;
 }
-.btn-success {
+td.a{
+    padding-left: 10rem;
+}
+td.b{
+    padding-left: 23rem;
+}
+/* .btn-success {
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
     margin-left: 26rem;
-    /* margin-left: 31.5rem;
-    margin-top: -8.7rem; */
-}
-.btn.bck.btn-success{
-    margin-top: -8.5rem;
-    margin-left: 31rem;
-}
-.btn.fnd.btn-success{
-    margin-left: 24rem;
+} */
+.btn.sub.btn-success{
+    margin-left: 28rem;
+    margin-top: 4rem;
 }
