@@ -7,8 +7,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./poollist.component.css']
 })
 export class PoollistComponent implements OnInit {
-
-  constructor(private router: Router ) { }
+  poollist: [{
+    drivername: string,
+    phonenumber: string
+  }];
+  constructor(private router: Router ) {
+    this.poollist = [{
+      drivername: 'Rahul',
+      phonenumber: '9446452521'
+    },
+    { drivername: 'Divij',
+      phonenumber: '9497278755'
+    },
+    { drivername: 'Pradeesh',
+      phonenumber: '9544456789'
+    }];
+   }
 
   ngOnInit() {
   }
@@ -17,6 +31,9 @@ export class PoollistComponent implements OnInit {
   }
   gotoFindPool() {
     this.router.navigateByUrl('/user/findpool');
+  }
+  gotoDashboard() {
+    this.router.navigateByUrl('/user/dashboard');
   }
 
 }

@@ -1,3 +1,18 @@
-<p>
-  pooldetails works!
-</p>
+<div class="pooldetail-container">
+  <div class="pooldetailBox">
+    <h1 align='center'>Pool List</h1>
+      <tr *ngFor="let pooldetails of pooldetail;">
+      <p>Driver Name : {{pooldetails.drivername}}</p>
+      <p>Phone Number : {{pooldetails.phonenumber}}</p>
+      <p>Date : {{pooldetails.date}}</p>
+      <p>Time : {{pooldetails.time}}</p>
+      <p>From : {{pooldetails.from}}</p>
+      <p>To : {{pooldetails.to}}</p>
+      <p>Price : {{pooldetails.price}}</p>
+      <p>Vahicle Name : {{pooldetails.vehiclename}}</p>
+      <p>Vehicle Number : {{pooldetails.vehiclenumber}}</p>
+      <p>Number of Seats : {{pooldetails.numberofseats}}</p>
+      <button type="submit" class="btn sub btn-success" (click)=gotoDashboard()>Request</button>
+      <button type="submit" class="btn sub btn-success" (click)=gotoPoolList()>Back</button>
+  </div>
+</div>

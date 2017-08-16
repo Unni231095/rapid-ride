@@ -1,6 +1,18 @@
 <div class="poollist-container">
   <div class="poollistBox">
     <h1 align='center'>Pool List</h1>
+    <table class="poollisttable">
+      <tr>
+        <th>Driver Name</th>
+        <th>Phone Number</th> 
+        <th>Actions
+      </tr>
+      <tr *ngFor="let poollists of poollist; let i = index" (click)=gotoPoolDetails()>
+              <td>{{poollists.drivername}}</td>
+              <td>{{poollists.phonenumber}}</td>
+              <button type="submit" class="btn sub btn-success" (click)=gotoDashboard()>Request</button>
+      </tr>
+  </table>
       <div class="form-group">
        <button type="submit" class="btn sub btn-success" (click)=gotoFindPool()>Back</button>
       </div>
