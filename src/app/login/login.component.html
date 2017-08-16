@@ -12,12 +12,10 @@
     <div class="form-group">
       <button type="submit" class="btn btn-success">Sign In</button>
     </div>
-      <div class="btn2"> 
-        <google-signin
-          [clientId]="myClientId"
-          [width]="150"
-          (googleSignInSuccess)="onGoogleSignInSuccess($event)">
-        </google-signin>
+      <div class="btn2">   
+        <span class="text" id="googleSigningBtn">
+          Continue With Google
+        </span>
       </div>
   </div>
 </div> 

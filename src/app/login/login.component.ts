@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { GoogleSignInComponent } from 'angular-google-signin';
 import { GoogleSignInSuccess } from 'angular-google-signin';
 import { Router } from '@angular/router';
@@ -9,27 +9,30 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  public gapi: any;
-
-  constructor(private router: Router) { }
-
-  ngOnInit() {
+export class LoginComponent implements AfterViewInit {
+  public auth2: any;
+  public googleInit() {
+    gapi.load('auth2', () => {
+      this.auth2 = gapi.auth2.init({
+        client_id: '1090480001206-65j6qj246c6jupnukeof4mp230maugij.apps.googleusercontent.com'
+      });
+      this.attachSignin(document.getElementById('googleSigningBtn'));
+    });
   }
-  private myClientId = '1090480001206-65j6qj246c6jupnukeof4mp230maugij.apps.googleusercontent.com';
-
-  /*
-   * @desc Sign in with google api
-   * @param {Object} event return from the google sign in process
-   * @author Unnikrishnan M
-   */
-  onGoogleSignInSuccess(event: GoogleSignInSuccess) {
-    const googleUser: gapi.auth2.GoogleUser = event.googleUser;
-    const id: string = googleUser.getId();
-    const profile: gapi.auth2.BasicProfile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log('Name: ' + profile.getName());
-    console.log('Image:' + profile.getImageUrl());
-    this.router.navigateByUrl('user/dashboard');
+  public attachSignin(element) {
+    this.auth2.attachClickHandler(element, {},
+      (googleUser) => {
+        console.log(googleUser);
+        console.log(googleUser.getBasicProfile().ig);
+        console.log(googleUser.getBasicProfile().Paa);
+        console.log(googleUser.getBasicProfile().U3);
+        this.router.navigateByUrl('/user/dashboard');
+      }, function (error) {
+        console.log(JSON.stringify(error, undefined, 2));
+      });
+  }
+  constructor(private router: Router) {}
+  ngAfterViewInit() {
+    this.googleInit();
   }
 }
