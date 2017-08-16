@@ -7,27 +7,45 @@
 .poollistBox{
   position: relative;
   width: 600px;
-  height: 296px;
+  height: 396px;
   background-color: #ccc;
   border-radius: 5px;
   top: 50%;
   left: 50%;
-  margin-top: -200px;
-  margin-left: -300px;
+  margin-top: -308px;
+  margin-left: -273px;
 }
-td.a{
-    padding-left: 10rem;
+
+.poollisttable{
+ margin: 0 auto;
 }
+
 td.b{
-    padding-left: 23rem;
+    padding-left: 2rem;
 }
-/* .btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-    margin-left: 26rem;
-} */
+
+td.c{
+    padding-left: 3rem;
+} 
+
+th.d{
+    padding-left: 2rem;
+}
+
+th.a{ 
+      padding-left: 29rem;
+}
+
 .btn.sub.btn-success{
-    margin-left: 28rem;
+    margin-left: -10rem;
     margin-top: 4rem;
+}
+
+.btn.det.btn-success{
+    margin-left: 14rem;
+}
+
+.btn.bac.btn-success{
+    margin-top: 4rem;
+    margin-left: 27rem;
 }

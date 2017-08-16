@@ -12,20 +12,24 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  gotoMyPool(){
+  /*
+     * @desc Main page of CarPooling system
+     * @param no parameters are passed
+     * @author Unnikrishnan M
+     */
+  gotoMyPool() {
     this.router.navigateByUrl('user/mypool');
   }
 
-   gotoFindPool(){
+  gotoFindPool() {
     this.router.navigateByUrl('user/findpool');
   }
 
-  gotoCreatePool(){
+  gotoCreatePool() {
     this.router.navigateByUrl('user/createpool');
   }
 
-  gotoNotification(){
+  gotoNotification() {
     this.router.navigateByUrl('user/notification');
   }
 }

@@ -32,10 +32,15 @@ export class PooldetailsComponent implements OnInit {
       vehiclenumber: 'KL 41 J 9904',
       numberofseats: 3,
     }];
-   }
+  }
 
   ngOnInit() {
   }
+  /*
+   * @desc Getting necessary pool details
+   * @param no parameters passed
+   * @author Unnikrishnan M
+   */
   gotoDashboard() {
     this.router.navigateByUrl('/user/dashboard');
   }

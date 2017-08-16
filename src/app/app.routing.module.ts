@@ -20,21 +20,23 @@ const routes: Routes = [
     { path: 'registration', component: RegistrationComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'myprofile', component: MyprofileComponent },
-    { path: 'user', component: UserComponent ,
+    {
+        path: 'user', component: UserComponent,
         children: [
-                    { path: 'dashboard', component: DashboardComponent },
-                    { path: 'mypool', component: MypoolComponent },
-                    { path: 'createpool', component: CreatepoolComponent },
-                    { path: 'findpool', component: FindpoolComponent },
-                    { path: 'notification', component: NotificationComponent },
-                    { path: 'poollist', component: PoollistComponent},
-                    { path: 'pooldetails', component: PooldetailsComponent}
+            { path: 'dashboard', component: DashboardComponent },
+            { path: 'mypool', component: MypoolComponent },
+            { path: 'createpool', component: CreatepoolComponent },
+            { path: 'findpool', component: FindpoolComponent },
+            { path: 'notification', component: NotificationComponent },
+            { path: 'poollist', component: PoollistComponent },
+            { path: 'pooldetails/:id', component: PooldetailsComponent }
         ]
     }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}
