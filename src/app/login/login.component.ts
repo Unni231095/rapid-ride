@@ -11,6 +11,11 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements AfterViewInit {
   public auth2: any;
+  /*
+  *@desc To initiate Google SignIn
+  *@params No parameters passed
+  *@author Unnikrishnan M
+  */
   public googleInit() {
     gapi.load('auth2', () => {
       this.auth2 = gapi.auth2.init({
@@ -19,6 +24,11 @@ export class LoginComponent implements AfterViewInit {
       this.attachSignin(document.getElementById('googleSigningBtn'));
     });
   }
+  /*
+  *@desc To authinticate Google User
+  *@params Sign In details 
+  *@author Unnikrishnan M
+  */
   public attachSignin(element) {
     this.auth2.attachClickHandler(element, {},
       (googleUser) => {

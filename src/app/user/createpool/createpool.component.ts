@@ -12,9 +12,17 @@ export class CreatepoolComponent implements OnInit {
 
   ngOnInit() {
   }
- gotoMyPool() {
+  /*
+    *@desc To route to My Pool Page
+    *@author Unnikrishnan M
+  */
+  gotoMyPool() {
     this.router.navigateByUrl('/user/mypool');
   }
+  /*
+    *@desc To route to Dashboard Page
+    *@author Unnikrishnan M
+  */
   gotoDashboard() {
     this.router.navigateByUrl('/user/dashboard');
   }
