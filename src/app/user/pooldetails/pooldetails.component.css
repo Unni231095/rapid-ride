@@ -12,7 +12,7 @@
     border-radius: 5px;
     top: 50%;
     left: 50%;
-    margin-top: -308px;
+    margin-top: -233px;
     margin-left: -273px;
 }
   
@@ -21,7 +21,7 @@
       margin-top: 4rem;
 }
 
-.btn.bac.btn-success{
+.btn.bac.btn-primary{
       margin-left: 1rem;
       margin-top: 4rem;
 }

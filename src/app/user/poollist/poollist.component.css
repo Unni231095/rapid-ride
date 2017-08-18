@@ -7,12 +7,12 @@
 .poollistBox{
   position: relative;
   width: 600px;
-  height: 396px;
+  height: 438px;
   background-color: #ccc;
   border-radius: 5px;
   top: 50%;
   left: 50%;
-  margin-top: -308px;
+  margin-top: -233px;
   margin-left: -273px;
 }
 
@@ -33,19 +33,28 @@ th.d{
 }
 
 th.a{ 
-      padding-left: 29rem;
+      padding-left: 18rem;
 }
 
-.btn.sub.btn-success{
-    margin-left: -10rem;
-    margin-top: 4rem;
+ .btn.sub.btn-success{
+    margin-top: -5.5rem;
+} 
+
+.btn.det.btn-info{
+    margin-left: 23rem;
 }
 
-.btn.det.btn-success{
-    margin-left: 14rem;
-}
-
-.btn.bac.btn-success{
+.btn.bac.btn-primary{
     margin-top: 4rem;
     margin-left: 27rem;
+} 
+.details{
+    width: 264px;
+    display: inline-block;
+    margin-top: 3rem;
+}
+.request{
+    width: 200px;
+    display: inline-block;
+    text-align: right;
 }

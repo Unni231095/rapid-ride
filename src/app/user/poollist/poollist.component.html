@@ -10,12 +10,14 @@
       <tr *ngFor="let poollists of poollist; let i = index">
         <td class="b">{{poollists.drivername}}</td>
         <td class="c">{{poollists.phonenumber}}</td>
-        <td><button type="submit" class="btn det btn-success" (click)=gotoPoolDetails(poollists.id)>Details</button></td>
-        <td><button type="submit" class="btn sub btn-success" (click)=gotoDashboard()>Request</button></td>
+        <td>
+        <span class="details"><button type="submit" class="btn det btn-info" (click)=gotoPoolDetails(poollists.id)>Details</button></span>
+        <span class="request"><button type="submit" class="btn sub btn-success" (click)=gotoDashboard()>Request</button></span>
+        </td>
       </tr>
     </table>
     <div class="form-group">
-      <button type="submit" class="btn bac btn-success" (click)=gotoFindPool()>Back</button>
+      <button type="submit" class="btn bac btn-primary" (click)=gotoFindPool()>Back</button>
     </div>
   </div>
 </div>

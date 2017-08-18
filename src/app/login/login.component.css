@@ -22,8 +22,13 @@ body {
 }
 
 .text{
+  margin-left: 7rem;
   background-color: white;
   cursor: pointer;
   font-size: 115%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn.sgn.btn-success{
+  margin-left: 12rem;
 }

@@ -17,7 +17,7 @@ body {
   border-radius: 5px;
   top: 50%;
   left: 50%;
-  margin-top: -308px;
+  margin-top: -233px;
   margin-left: -273px;
 }
 .btn-success {
@@ -28,7 +28,7 @@ body {
     /* margin-left: 31.5rem;
     margin-top: -8.7rem; */
 }
-.btn.bck.btn-success{
+.btn.bck.btn-primary{
     margin-top: -8.5rem;
     margin-left: 31rem;
 }
