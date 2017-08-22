@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing.module';
 import { GoogleSignInComponent } from 'angular-google-signin';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxSiemaModule } from 'ngx-siema';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -37,7 +39,9 @@ import { PooldetailsComponent } from './user/pooldetails/pooldetails.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot(),
+    NgxSiemaModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

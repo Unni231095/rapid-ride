@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule, Routes, Router } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -6,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  constructor() {
+  newTrustFormVariable: boolean = false;
+  constructor(private router: Router) {
   }
   ngOnInit() {
+  }
+
+  public toggleMenu(): void {
+    this.newTrustFormVariable = !this.newTrustFormVariable;
+  }
+  gotoNotification() {
+    this.router.navigateByUrl('user/notification');
   }
 }

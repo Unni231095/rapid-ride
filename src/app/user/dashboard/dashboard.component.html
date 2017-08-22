@@ -1,9 +1,19 @@
-<p>
-  Dashboard Works!
-</p>
-<div class="container">
-  <div class="tile1 press" (click)=gotoMyPool()><b>My Pool</b></div>
-  <div class="tile2 press" (click)=gotoFindPool()><b>Find Pool</b></div>
-  <div class="tile3 press" (click)=gotoCreatePool()><b>Create Pool</b></div>
-  <div class="tile4 press" (click)=gotoNotification()><b>Notification</b></div>
+<div class="dashboardContainer">
+    <ngx-siema [options]="options">
+        <ngx-siema-slide>
+            <div class="slide1">
+                <div class="button" (click)="gotoFindPool()">Find Pool</div>
+            </div>
+        </ngx-siema-slide>
+        <ngx-siema-slide>
+            <div class="slide2">
+                    <div class="button" (click)="gotoMyPool()">My Pool</div>
+            </div>
+        </ngx-siema-slide>
+        <ngx-siema-slide>
+            <div class="slide3">
+                    <div class="button" (click)="gotoCreatePool()">Create Pool</div>
+            </div>
+        </ngx-siema-slide>
+    </ngx-siema>
 </div>

@@ -1,12 +1,23 @@
-<div class="fixed-header">
-  <div class="container">
+<div class="fixedHeader">
+  <div class="fixedHeaderAlign">
     <nav>
-      <a href=" ">About</a>
-      <a href=" ">Services</a>
+      <a href="_">About</a>
+      <a href="_">Services</a>
     </nav>
+    <div>
+      <div class="roundButton" (click)="toggleMenu()"></div>
+      <div id="settings" *ngIf="newTrustFormVariable" class="tabcontent">
+          <div class="box1" (click)="gotoNotification()" ><font color="black">Notification</font><br>
+          </div>
+          <div class="box2"><font color="black">SignOut</font>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="fixed-footer">
-  <div class="container">Contact  Us</div>
-</div>
 <router-outlet></router-outlet>
+<div class="fixedFooter">
+  <div class="fixedFooterAlign">
+    <a href="_">Contact  Us</a>
+  </div>
+</div>

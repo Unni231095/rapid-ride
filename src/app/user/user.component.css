@@ -1,24 +1,89 @@
-.fixed-header, .fixed-footer{
-    width: 100%;
-    position: fixed;        
-    background: black;
-    padding: 10px 0;
-    color: #fff;
-}
-.fixed-header{
+.fixedHeader{
+    position: absolute;
     top: 0;
+    width: 100%;
+    background: #3881f7;
+    height: 50px;
 }
-.fixed-footer{
+
+.fixedHeaderAlign{
+    transform: translate(0%, 41%)
+}
+
+.fixedFooter{
+    position: absolute;
     bottom: 0;
-}    
-nav a{
-    float: right;
-    color: #fff;
-    text-decoration: none;
-    padding: 7px 25px;
+    width: 100%;
+    background: #3881f7;
+    height: 50px;
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
+
+.fixedFooterAlign{
+    width: 100%;
     text-align: center;
+    transform: translate(0%, 41%);
 }
+
+
+a{
+    color: white;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+a:hover{
+    color: black;
+}
+
+.roundButton{
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 28px;
+    right: 7px;
+    border-radius: 50%;
+    margin-top: -36px;
+    margin-right: 2px;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.roundButton:hover {
+    background: #000000;
+}
+
+.tabcontent{ 
+    position: absolute;
+    background: black;
+    height: 80px;
+    width: 180px;
+    top: 40px;
+    right: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.box1{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-top: 9px;
+    font-family: 'Roboto Slab', serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: whitesmoke;
+}
+
+.box2{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-top:  9px;
+    font-family: 'Roboto Slab', serif;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: white;
+}
+
