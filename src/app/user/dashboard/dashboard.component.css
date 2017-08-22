@@ -16,14 +16,14 @@
 .slide2{
     position: relative;
     top: 25px;
-    background: yellow;
+    background: white;
     width:100%;  
     height: calc(100vh - 125px);
 }
 .slide3{
     position: relative;
     top: 25px;
-    background: blue;
+    background: white;
     width:100%; 
     height: calc(100vh - 125px);
 }
