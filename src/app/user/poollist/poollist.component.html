@@ -1,15 +1,15 @@
 <div class="poollist-container">
   <div class="poollistBox">
     <h1 align='center'>Pool List</h1>
-    <table class="poollisttable">
+    <table class="table">
       <tr>
         <th>Driver Name</th>
-        <th class="d">Phone Number</th>
-        <th class="a">Actions</th>
+        <th>Phone Number</th>
+        <th>Actions</th>
       </tr>
       <tr *ngFor="let poollists of poollist; let i = index">
-        <td class="b">{{poollists.drivername}}</td>
-        <td class="c">{{poollists.phonenumber}}</td>
+        <td>{{poollists.drivername}}</td>
+        <td>{{poollists.phonenumber}}</td>
         <td>
         <span class="details"><button type="submit" class="btn det btn-info" (click)=gotoPoolDetails(poollists.id)>Details</button></span>
         <span class="request"><button type="submit" class="btn sub btn-success" (click)=gotoDashboard()>Request</button></span>
@@ -17,7 +17,7 @@
       </tr>
     </table>
     <div class="form-group">
-      <button type="submit" class="btn bac btn-primary" (click)=gotoFindPool()>Back</button>
+      <button type="submit" class="btn bac btn-info active" (click)=gotoFindPool()>Back</button>
     </div>
   </div>
 </div>

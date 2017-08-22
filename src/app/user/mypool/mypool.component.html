@@ -1,3 +1,34 @@
-<p>
-  mypool works!
-</p>
+<div class="mypool-container">
+  <div class="mypoolBox">
+    <h1 align='center'>My Pool</h1>
+    <table class="table">
+      <tr>
+        <th>TripID</th>
+        <th>Duration</th>
+        <th>Location</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Vehicle</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let mypools of mypool; let i = index">
+        <td>{{mypools.tripid}}</td>
+        <td >{{mypools.duration}}</td>
+        <td >{{mypools.location}}</td>
+        <td >{{mypools.destination}}</td>
+        <td >{{mypools.date}}</td>
+        <td >{{mypools.time}}</td>
+        <td >{{mypools.vehicle}}</td>
+        <td >{{mypools.price}}</td>
+        <td>
+        <button type="submit" class="btn del btn-danger" (click)="remove(mypools)">Delete</button>
+        </td>
+      </tr>
+    </table>
+    <div class="form-group">
+      <button type="submit" class="btn bac btn-primary" (click)=gotoDashboard()>Back</button>
+    </div>
+  </div>
+</div>

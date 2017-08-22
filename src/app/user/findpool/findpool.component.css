@@ -11,8 +11,9 @@ body {
 
 .findpoolBox{
   position: relative;
+  padding: 1rem;
   width: 600px;
-  height: 400px;
+  height: 420px;
   background-color: #ccc;
   border-radius: 5px;
   top: 50%;
@@ -20,18 +21,12 @@ body {
   margin-top: -233px;
   margin-left: -273px;
 }
-.btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-    margin-left: 26rem;
-    /* margin-left: 31.5rem;
-    margin-top: -8.7rem; */
+
+.btn.bck.btn-info.active{
+  margin-top: -8.5rem;
+  margin-left: 31rem;
 }
-.btn.bck.btn-primary{
-    margin-top: -8.5rem;
-    margin-left: 31rem;
-}
+
 .btn.fnd.btn-success{
-    margin-left: 24rem;
+  margin-left: 24rem;
 }
