@@ -12,15 +12,8 @@ export class FindpoolComponent implements OnInit {
 
   ngOnInit() {
   }
-  /*
-   * @desc Entering details about required pool
-   * @param no parameters are passed
-   * @author Vidhya C
-   */
-  gotoPoolList() {
-    this.router.navigateByUrl('/user/poollist');
-  }
-  gotoDashboard() {
-    this.router.navigateByUrl('/user/dashboard');
+
+  gotoPoolList(): void {
+    this.router.navigateByUrl('user/poollist');
   }
 }

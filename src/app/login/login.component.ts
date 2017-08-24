@@ -10,8 +10,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements AfterViewInit {
+
   public auth2: any;
-  /*
+
+  /**
   *@desc To initiate Google SignIn
   *@params No parameters passed
   *@author Unnikrishnan M
@@ -24,9 +26,10 @@ export class LoginComponent implements AfterViewInit {
       this.attachSignin(document.getElementById('googleSigningBtn'));
     });
   }
-  /*
+
+  /**
   *@desc To authinticate Google User
-  *@params Sign In details 
+  *@params Sign In details
   *@author Unnikrishnan M
   */
   public attachSignin(element) {

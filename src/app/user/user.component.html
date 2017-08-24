@@ -1,23 +1,36 @@
-<div class="fixedHeader">
-  <div class="fixedHeaderAlign">
-    <nav>
-      <a href="_">About</a>
-      <a href="_">Services</a>
-    </nav>
-    <div>
-      <div class="roundButton" (click)="toggleMenu()"></div>
-      <div id="settings" *ngIf="newTrustFormVariable" class="tabcontent">
-          <div class="box1" (click)="gotoNotification()" ><font color="black">Notification</font><br>
-          </div>
-          <div class="box2"><font color="black">SignOut</font>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="www.rapidvaluesolutions.com">RapidRide <span>by RapidValue</span></a></div>
+    <a href="#menu">Menu</a>
+  </header>
+  
+  <!-- Nav -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="user/dashboard">Home</a></li>
+      <li><a href="user/mypool">My Pool</a></li>
+      <li><a href="user/createpool">Create Pool</a></li>
+      <li><a href="user/findpool">Find Pool</a></li>
+      <li><a href="user/notification">Notifications</a></li>
+      <li><a href="_">Sign Out</a></li>
+    </ul>
+  </nav>
+  
+
+
 <router-outlet></router-outlet>
-<div class="fixedFooter">
-  <div class="fixedFooterAlign">
-    <a href="_">Contact  Us</a>
-  </div>
-</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+      <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      &copy; RapidRide. All rights reserved.
+    </div>
+  </footer>

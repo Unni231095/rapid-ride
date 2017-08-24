@@ -1,26 +1,51 @@
-<div class="findpool-container">
-  <div class="findpoolBox">
-    <h1 align='center'>Find Pool</h1>
-    <div class="form-group">
-      <label for="from">From:</label>
-      <input class="form-control" id="from" type="text" name="from" placeholder="Your Location">
+<!-- One -->
+<section id="One" class="wrapper style3">
+  <div class="inner">
+    <header class="align-center">
+      <p>Check your Available Rides.</p>
+      <h2>Find Pool</h2>
+    </header>
+  </div>
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper style2">
+  <div class="inner">
+    <div class="box">
+      <div class="content">
+        <header class="align-center">
+          <h2>Find Pool Form</h2>
+        </header>
+        <form method="post" action="#">
+          <div class="row uniform">
+            <!-- Break -->
+            <div class="6u 12u$(xmedium)">
+              <label for="location">Location</label>
+              <input type="text" name="location" id="location" value="" placeholder="Starting From" />
+            </div>
+            <div class="6u 12u$(xmedium)">
+              <label for="destination">Destination</label>
+              <input type="text" name="destination" id="destination" value="" placeholder="Final Stop" />
+            </div>
+            <!-- Break -->
+            <div class="6u 12u$(xmedium)">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" value="" placeholder="Travel Date" />
+            </div>
+            <div class="6u 12u$(xmedium)">
+              <label for="time">Starting Time</label>
+              <input type="time" name="time" id="time" value="" placeholder="Starting Time" />
+            </div>
+            <!-- Break -->
+            <div class="12u$">
+              <ul class="actions">
+                <li><input type="submit" (click)="gotoPoolList()" value="Search" /></li>
+                <li><input type="reset" value="Reset" class="alt" /></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="to">To</label>
-      <input class="form-control" id="to" type="text" name="to" placeholder="Destination">
-    </div>
-    <div class="form-group">
-      <label for="date">Date</label>
-      <input class="form-control" type="date" id="date" name="date" placeholder="Enter Date">
-    </div>
-    <div class="form-group">
-      <label for="time">Time</label>
-      <input class="form-control" type="time" id="time" name="time" placeholder="Enter Time">
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn fnd btn-success" (click)=gotoPoolList()>Find</button>
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn bck btn-info active" (click)=gotoDashboard()>Back</button>
-    </div>
-  <div>
+  </div>
+</section>

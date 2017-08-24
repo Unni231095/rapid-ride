@@ -11,7 +11,7 @@ export class RegistrationComponent implements OnInit {
 
   ngOnInit() {
   }
-/*
+/**
    * @desc Creating new account in CarPool system
    * @param no parameters are passed
    * @author Vidhya C

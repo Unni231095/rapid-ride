@@ -1,19 +1,60 @@
-<div class="dashboardContainer">
-    <ngx-siema [options]="options">
-        <ngx-siema-slide>
-            <div class="slide1">
-                <div class="button" (click)="gotoFindPool()">Find Pool</div>
-            </div>
-        </ngx-siema-slide>
-        <ngx-siema-slide>
-            <div class="slide2">
-                    <div class="button" (click)="gotoMyPool()">My Pool</div>
-            </div>
-        </ngx-siema-slide>
-        <ngx-siema-slide>
-            <div class="slide3">
-                    <div class="button" (click)="gotoCreatePool()">Create Pool</div>
-            </div>
-        </ngx-siema-slide>
-    </ngx-siema>
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="www.rapidvaluesolutions.com">RapidRide <span>by RapidValue</span></a></div>
+    <a href="#menu">Menu</a>
+  </header>
+  
+<!-- Nav -->
+<nav id="menu">
+<ul class="links">
+    <li><a href="user/dashboard">Home</a></li>
+    <li><a href="user/mypool">My Pool</a></li>
+    <li><a href="user/createpool">Create Pool</a></li>
+    <li><a href="user/findpool">Find Pool</a></li>
+    <li><a href="user/notification">Notifications</a></li>
+    <li><a href="_">Sign Out</a></li>
+</ul>
+</nav>
+  
+<!-- One -->
+<section id="One" class="wrapper style3">
+<div class="inner">
+    <header class="align-center">
+    <p>Welcome to RapidRide.</p>
+    <h2>RapidRide</h2>
+    </header>
 </div>
+</section>
+     
+<!-- Two -->
+<section id="two" class="wrapper style2">
+<div class="inner">
+    <div class="gallery">
+        <div>
+            <div class="image fit">
+                <a href="user/createpool"><img src="../../assets/images/pic01.jpg" alt="" /></a>
+            </div>
+        </div>
+        <div>
+            <div class="image fit">
+                <a href="user/findpool"><img src="../../assets/images/pic02.jpg" alt="" /></a>
+            </div>
+        </div>
+        <div>
+            <div class="image fit">
+                <a href="user/mypool"><img src="../../assets/images/pic03.jpg" alt="" /></a>
+            </div>
+        </div>
+        <div>
+            <div class="image fit">
+                <a href="user/notification"><img src="../../assets/images/pic04.jpg" alt="" /></a>
+            </div>
+        </div>
+    </div>
+    <header class="align-center">
+        <p class="special">We aim at providing a Proper, Healthy and Effective Communication among Employees for a effective Car Pooling
+            System.</p>
+        <h2>About RapidRide.</h2>
+    </header>
+</div>
+</section>
