@@ -48,4 +48,13 @@ export class LoginComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.googleInit();
   }
+
+  /**
+   * @desc To scroll downwards
+   * @param No parameters passed
+   * @author Vidhya C
+   */
+  toScroll(): void {
+    window.scrollBy(0, 630);
+  }
 }

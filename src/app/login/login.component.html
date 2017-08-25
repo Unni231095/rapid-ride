@@ -12,6 +12,7 @@
         <p>Wanna a Ride Home with your Co-Worker</p>
         <h2>Find Pool</h2>
       </header>
+      <div class="arrow one" (click)="toScroll()"></div>
     </div>
   </article>
   <article>
@@ -21,6 +22,7 @@
         <p>Care to give a Lift to your Co-Worker</p>
         <h2>Create Pool</h2>
       </header>
+      <div class="arrow two" (click)="toScroll()"></div>
     </div>
   </article>
   <article>
@@ -30,7 +32,8 @@
         <p>Displays all your Created Pools</p>
         <h2>My Pools</h2>
       </header>
-    </div>
+      <div class="arrow three" (click)="toScroll()"></div>
+      </div>
   </article>
 </section>
 
@@ -59,6 +62,7 @@
             <div class="12u$ align-center">
               <ul class="actions">
                 <li><input type="submit" class="button" value="Sign In" /></li>
+                
                 <li><input type="button" value="Continue with Google" id="googleSigningBtn" class="alt" /></li>
               </ul>
             </div>
