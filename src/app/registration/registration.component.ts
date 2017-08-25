@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registration',
@@ -7,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-/**
-   * @desc Creating new account in CarPool system
-   * @param no parameters are passed
-   * @author Vidhya C
-*/
+  gotoVehicleRegistration(): void {
+    this.router.navigateByUrl('vehicleregistration');
+  }
+  gotoDashboard(): void {
+    this.router.navigateByUrl('user/dashboard');
+  }
 }

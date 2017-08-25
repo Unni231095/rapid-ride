@@ -19,6 +19,7 @@ import { NotificationComponent } from './user/notification/notification.componen
 import { RegistrationComponent } from './registration/registration.component';
 import { PoollistComponent } from './user/poollist/poollist.component';
 import { PooldetailsComponent } from './user/pooldetails/pooldetails.component';
+import { VehicleRegistrationComponent } from './vehicleregistration/vehicleregistration.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PooldetailsComponent } from './user/pooldetails/pooldetails.component';
     NotificationComponent,
     RegistrationComponent,
     PoollistComponent,
-    PooldetailsComponent
+    PooldetailsComponent,
+    VehicleRegistrationComponent
   ],
   imports: [
     BrowserModule,

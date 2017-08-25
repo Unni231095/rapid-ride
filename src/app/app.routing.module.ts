@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { VehicleRegistrationComponent } from './vehicleregistration/vehicleregistration.component';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './user/dashboard/dashboard.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'registration', component: RegistrationComponent },
+    { path: 'vehicleregistration', component: VehicleRegistrationComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'myprofile', component: MyprofileComponent },
     {
@@ -29,7 +31,7 @@ const routes: Routes = [
             { path: 'findpool', component: FindpoolComponent },
             { path: 'notification', component: NotificationComponent },
             { path: 'poollist', component: PoollistComponent },
-            { path: 'pooldetails/:id', component: PooldetailsComponent }
+            { path: 'pooldetails', component: PooldetailsComponent }
         ]
     }
 ];

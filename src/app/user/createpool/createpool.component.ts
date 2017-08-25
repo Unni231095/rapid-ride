@@ -12,4 +12,7 @@ export class CreatepoolComponent implements OnInit {
 
   ngOnInit() {
   }
+  gotoMyPool(): void {
+    this.router.navigateByUrl('user/mypool');
+  }
 }

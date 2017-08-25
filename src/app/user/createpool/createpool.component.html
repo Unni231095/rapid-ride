@@ -16,7 +16,7 @@
         <header class="align-center">
           <h2>Create Pool Form</h2>
         </header>
-        <form method="post" action="#">
+        <form>
           <div class="row uniform">
             <div class="6u 12u$(xmedium)">
               <label for="name">Driver Name</label>
@@ -73,7 +73,7 @@
             <!-- Break -->
             <div class="12u$">
               <ul class="actions">
-                <li><input type="submit" class="button" value="Register" /></li>
+                <li><input type="submit" class="button" (click)="gotoMyPool()" value="Register" /></li>
                 <li><input type="reset" value="Reset" class="alt" /></li>
               </ul>
             </div>

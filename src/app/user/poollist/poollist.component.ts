@@ -7,11 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./poollist.component.css']
 })
 export class PoollistComponent implements OnInit {
-  poollist: [{
-    id: number,
-    drivername: string,
-    phonenumber: string
-  }];
+  // poollist: [{
+  //   id: number,
+  //   drivername: string,
+  //   phonenumber: string
+  // }];
   constructor(private router: Router ) {
     // this.poollist = [{
     //   id: 100,
@@ -36,7 +36,7 @@ export class PoollistComponent implements OnInit {
    * @author Vidhya C
    */
   gotoPoolDetails(id: number) {
-    let link= (['/user/pooldetails/', id]);
+    let link= (['/user/pooldetails']);
     this.router.navigate(link);
   }
   gotoFindPool() {
