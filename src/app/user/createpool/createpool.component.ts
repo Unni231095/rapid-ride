@@ -14,7 +14,8 @@ export class CreatepoolComponent implements OnInit {
   }
 
   gotoVehicleRegistration(): void {
-    this.router.navigateByUrl('vehicleregistration');
+    let link = (['vehicleregistration', 2]);
+    this.router.navigate(link);
   }
 
   gotoMyPool(): void {

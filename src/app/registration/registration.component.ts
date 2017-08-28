@@ -13,7 +13,8 @@ export class RegistrationComponent implements OnInit {
   ngOnInit() {
   }
   gotoVehicleRegistration(): void {
-    this.router.navigateByUrl('vehicleregistration');
+    let link = (['vehicleregistration', 1]);
+    this.router.navigate(link);
   }
   gotoDashboard(): void {
     this.router.navigateByUrl('user/dashboard');

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing.module';
 import { GoogleSignInComponent } from 'angular-google-signin';
 
+import { ApicallService } from './utilities/apicall/apicall.service';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
@@ -40,7 +42,9 @@ import { VehicleRegistrationComponent } from './vehicleregistration/vehicleregis
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    ApicallService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

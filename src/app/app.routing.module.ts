@@ -19,7 +19,7 @@ const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'registration', component: RegistrationComponent },
-    { path: 'vehicleregistration', component: VehicleRegistrationComponent },
+    { path: 'vehicleregistration/:id', component: VehicleRegistrationComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'myprofile', component: MyprofileComponent },
     {
