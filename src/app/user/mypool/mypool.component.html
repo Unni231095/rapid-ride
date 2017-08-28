@@ -1,38 +1,3 @@
-<!-- <div class="mypool-container">
-  <div class="mypoolBox">
-    <h1 align='center'>My Pool</h1>
-    <table class="table">
-      <tr>
-        <th>TripID</th>
-        <th>Duration</th>
-        <th>Location</th>
-        <th>Destination</th>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Vehicle</th>
-        <th>Price</th>
-        <th>Action</th>
-      </tr>
-      <tr *ngFor="let mypools of mypool; let i = index">
-        <td>{{mypools.tripid}}</td>
-        <td >{{mypools.duration}}</td>
-        <td >{{mypools.location}}</td>
-        <td >{{mypools.destination}}</td>
-        <td >{{mypools.date}}</td>
-        <td >{{mypools.time}}</td>
-        <td >{{mypools.vehicle}}</td>
-        <td >{{mypools.price}}</td>
-        <td>
-        <button type="submit" class="btn del btn-danger" (click)="remove(mypools)">Delete</button>
-        </td>
-      </tr>
-    </table>
-    <div class="form-group">
-      <button type="submit" class="btn bac btn-primary" (click)=gotoDashboard()>Back</button>
-    </div>
-  </div>
-</div> -->
-
 <!-- One -->
 <section id="One" class="wrapper style3">
   <div class="inner">
@@ -52,48 +17,41 @@
           <h2>My Pools</h2>
         </header>
         <div class="table-wrapper">
-          <table>
+          <table class="alt">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Description</th>
+                <th>TripID</th>
+                <th>Duration</th>
+                <th>Location</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Vehicle</th>
                 <th>Price</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Item 1</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item 2</td>
-                <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item 3</td>
-                <td> Morbi faucibus arcu accumsan lorem.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item 4</td>
-                <td>Vitae integer tempus condimentum.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item 5</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
+              <tr *ngFor="let mypools of mypool; let i = index">
+                <td>{{mypools.tripid}}</td>
+                <td>{{mypools.duration}}</td>
+                <td>{{mypools.location}}</td>
+                <td>{{mypools.destination}}</td>
+                <td>{{mypools.date}}</td>
+                <td>{{mypools.time}}</td>
+                <td>{{mypools.vehicle}}</td>
+                <td>{{mypools.price}}</td>
+                <td>
+                  <button type="submit" class="btn del btn-danger" (click)="remove(mypools)">Delete</button>
+                </td>
               </tr>
             </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="2"></td>
-                <td>100.00</td>
-              </tr>
-            </tfoot>
           </table>
+        </div>
+        <div class="12u$">
+              <ul class="actions">
+                <li><input type="submit" class="button" (click)="gotoDashboard()" value="Back" /></li>
+              </ul>
         </div>
       </div>
     </div>

@@ -1,23 +1,3 @@
-<!-- <div class="pooldetail-container">
-  <div class="pooldetailBox">
-    <h1 align='center'>Pool Details</h1>
-    <tr *ngFor="let pooldetails of pooldetail;">
-      <p>Driver Name : {{pooldetails.drivername}}</p>
-      <p>Phone Number : {{pooldetails.phonenumber}}</p>
-      <p>Date : {{pooldetails.date}}</p>
-      <p>Time : {{pooldetails.time}}</p>
-      <p>From : {{pooldetails.from}}</p>
-      <p>To : {{pooldetails.to}}</p>
-      <p>Price : {{pooldetails.price}}</p>
-      <p>Vehicle Name : {{pooldetails.vehiclename}}</p>
-      <p>Vehicle Number : {{pooldetails.vehiclenumber}}</p>
-      <p>Number of Seats : {{pooldetails.numberofseats}}</p>
-    </tr>
-    <button type="submit" class="btn sub btn-success" (click)=gotoDashboard()>Request</button>
-    <button type="submit" class="btn bac btn-info active" (click)=gotoPoolList()>Back</button>
-  </div>
-</div> -->
-
 <!-- One -->
 <section id="One" class="wrapper style3">
   <div class="inner">
@@ -37,19 +17,26 @@
         <header class="align-center">
           <h2>Pool Details</h2>
         </header>
-        <!-- Lists -->
-        <h3>Lists</h3>
         <div class="row">
           <div class="6u 12u$(small)">
-            <h4>Alternate</h4>
-            <ul class="alt">
-              <li>Dolor pulvinar etiam magna etiam.</li>
-              <li>Sagittis adipiscing lorem eleifend.</li>
-              <li>Felis enim feugiat dolore viverra.</li>
+            <ul class="alt" *ngFor="let pooldetails of pooldetail;">
+              <p>Driver Name : {{pooldetails.drivername}}</p>
+              <p>Phone Number : {{pooldetails.phonenumber}}</p>
+              <p>Date : {{pooldetails.date}}</p>
+              <p>Time : {{pooldetails.time}}</p>
+              <p>From : {{pooldetails.from}}</p>
+              <p>To : {{pooldetails.to}}</p>
+              <p>Vehicle Name : {{pooldetails.vehiclename}}</p>
+              <p>Vehicle Number : {{pooldetails.vehiclenumber}}</p>
+              <p>Number of Seats : {{pooldetails.numberofseats}}</p>
             </ul>
           </div>
-          <div class="6u$ 12u$(small)">
-          </div>
+        </div>
+        <div class="12u$">
+          <ul class="actions">
+            <li><button type="submit" (click)=gotoDashboard()>Request</button></li>
+            <li><button type="submit" (click)=gotoPoolList()>Back</button></li>
+          </ul>
         </div>
       </div>
     </div>

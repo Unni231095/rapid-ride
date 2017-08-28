@@ -19,20 +19,6 @@
         <form>
           <div class="row uniform">
             <div class="6u 12u$(xmedium)">
-              <label for="name">Driver Name</label>
-              <input type="text" name="name" id="name" value="" placeholder="Name" />
-            </div>
-            <div class="6u 12u$(xmedium)">
-              <label for="phonenumber">Mobile Number</label>
-              <input type="text" name="phonenumber" id="phonenumber" value="" placeholder="Mobile Number" />
-            </div>
-            <!-- Break -->
-            <div class="6u$ 12u$(xlarge)">
-              <label for="email">Email ID</label>
-              <input type="email" name="email" id="email" value="" placeholder="Email" />
-            </div>
-            <!-- Break -->
-            <div class="6u 12u$(xmedium)">
               <label for="location">Location</label>
               <input type="text" name="location" id="location" value="" placeholder="Starting From" />
             </div>
@@ -50,30 +36,10 @@
               <input type="time" name="time" id="time" value="" placeholder="Starting Time" />
             </div>
             <!-- Break -->
-            <div class="6u 12u$(xmedium)">
-              <label for="seats">Seats available</label>
-              <input type="number" name="seats" id="seats" value="" placeholder="Seats Available" />
-            </div>
-            <!-- Break -->
-            <div class="6u 12u$(xmedium)">
-              <label for="ac">AC</label>
-              <div class="select-wrapper">
-                <select name="ac" id="ac">
-                            <option value="">- Select -</option>
-                            <option value="1">Yes</option>
-                            <option value="1">No</option>
-                          </select>
-              </div>
-            </div>
-            <!-- Break -->
-            <div class="12u$">
-              <label for="message">Comments</label>
-              <textarea name="message" id="message" placeholder="Comments" rows="3"></textarea>
-            </div>
-            <!-- Break -->
             <div class="12u$">
               <ul class="actions">
-                <li><input type="submit" class="button" (click)="gotoMyPool()" value="Register" /></li>
+                <li><input type="button" (click)="gotoVehicleRegistration()" value="Add Vehicle" /></li>
+                <li><input type="submit" class="button" (click)="gotoMyPool()" value="Create" /></li>
                 <li><input type="reset" value="Reset" class="alt" /></li>
               </ul>
             </div>

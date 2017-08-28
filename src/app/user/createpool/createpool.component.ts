@@ -12,6 +12,11 @@ export class CreatepoolComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  gotoVehicleRegistration(): void {
+    this.router.navigateByUrl('vehicleregistration');
+  }
+
   gotoMyPool(): void {
     this.router.navigateByUrl('user/mypool');
   }

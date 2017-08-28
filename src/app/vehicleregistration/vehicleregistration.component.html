@@ -39,18 +39,29 @@
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
+              <label for="ac">AC</label>
+              <div class="select-wrapper">
+                <select name="ac" id="ac">
+                            <option value="">- Select -</option>
+                            <option value="1">Yes</option>
+                            <option value="1">No</option>
+                </select>
+              </div>
+            </div>
+            <!-- Break -->
+            <div class="6u 12u$(xmedium)">
               <label for="yearofmanufacture">Year of Manufacture</label>
               <input type="text" name="yearofmanufacture" id="yearofmanufacture" value="" placeholder="Year of Manufacture" />
             </div>
-             <!-- Break -->
-             <div class="6u 12u$(xmedium)">
+            <!-- Break -->
+            <div class="6u 12u$(xmedium)">
               <label for="insurancenumber">Insurance Number</label>
               <input type="text" name="insurancenumber" id="insurancenumber" value="" placeholder="Insurance Number" />
             </div>
             <!-- Break -->
             <div class="12u$">
               <ul class="actions">
-                <li><input type="submit" (click)="gotoRegistration()" value="Save" /></li>
+                <li><input type="submit" (click)="gotoRegistration()" value="Register" /></li>
                 <li><input type="reset" value="Reset" class="alt" /></li>
               </ul>
             </div>

@@ -1,33 +1,9 @@
-<!-- <div class="poollist-container">
-  <div class="poollistBox">
-    <h1 align='center'>Pool List</h1>
-    <table class="table">
-      <tr>
-        <th>Driver Name</th>
-        <th>Phone Number</th>
-        <th>Actions</th>
-      </tr>
-      <tr *ngFor="let poollists of poollist; let i = index">
-        <td>{{poollists.drivername}}</td>
-        <td>{{poollists.phonenumber}}</td>
-        <td>
-          <span class="details"><button type="submit" class="btn det btn-info" (click)=gotoPoolDetails(poollists.id)>Details</button></span>
-          <span class="request"><button type="submit" class="btn sub btn-success" (click)=gotoDashboard()>Request</button></span>
-        </td>
-      </tr>
-    </table>
-    <div class="form-group">
-      <button type="submit" class="btn bac btn-info active" (click)=gotoFindPool()>Back</button>
-    </div>
-  </div>
-</div> -->
-
 <!-- One -->
 <section id="One" class="wrapper style3">
   <div class="inner">
     <header class="align-center">
-        <p>Check your Available Rides.</p>
-        <h2>Find Pool</h2>
+      <p>Check your Available Rides.</p>
+      <h2>Find Pool</h2>
     </header>
   </div>
 </section>
@@ -40,48 +16,30 @@
         <header class="align-center">
           <h2>Pool List</h2>
         </header>
-        <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Item 1</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item 2</td>
-                <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item 3</td>
-                <td> Morbi faucibus arcu accumsan lorem.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item 4</td>
-                <td>Vitae integer tempus condimentum.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item 5</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="2"></td>
-                <td>100.00</td>
-              </tr>
-            </tfoot>
-          </table>
+        <table class="alt">
+          <thead>
+            <tr>
+              <th>Driver Name</th>
+              <th>Phone Number</th>
+              <th class="action">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let poollists of poollist; let i = index">
+              <td>{{poollists.drivername}}</td>
+              <td>{{poollists.phonenumber}}</td>
+              <td>
+                <span class="details"><button type="submit" (click)=gotoPoolDetails(poollists.id)>Details</button></span>
+                <span class="request"><button type="submit" (click)=gotoDashboard()>Request</button></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="12u$">
+          <ul class="actions">
+            <li><input type="submit" class="button" (click)="gotoDashboard()" value="Back" /></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

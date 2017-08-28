@@ -7,25 +7,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./poollist.component.css']
 })
 export class PoollistComponent implements OnInit {
-  // poollist: [{
-  //   id: number,
-  //   drivername: string,
-  //   phonenumber: string
-  // }];
+  poollist: [{
+    id: number,
+    drivername: string,
+    phonenumber: string
+  }];
   constructor(private router: Router ) {
-    // this.poollist = [{
-    //   id: 100,
-    //   drivername: 'Rahul',
-    //   phonenumber: '9446452521'
-    // },
-    // { id: 101,
-    //   drivername: 'Divij',
-    //   phonenumber: '9497278755'
-    // },
-    // { id: 102,
-    //   drivername: 'Pradeesh',
-    //   phonenumber: '9544456789'
-    // }];
+    this.poollist = [{
+      id: 100,
+      drivername: 'Rahul',
+      phonenumber: '9446452521'
+    },
+    { id: 101,
+      drivername: 'Divij',
+      phonenumber: '9497278755'
+    },
+    { id: 102,
+      drivername: 'Pradeesh',
+      phonenumber: '9544456789'
+    }];
    }
 
   ngOnInit() {

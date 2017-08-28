@@ -17,4 +17,8 @@ export class VehicleRegistrationComponent implements OnInit {
     this.router.navigateByUrl('registration');
   }
 
+  gotoCreatePool(): void {
+    this.router.navigateByUrl('user/createpool');
+  }
+
 }

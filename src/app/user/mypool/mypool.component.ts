@@ -18,52 +18,55 @@ export class MypoolComponent implements OnInit {
    price: number
   }];
   constructor(private router: Router ) {
-  //   this.mypool = [{
-  //     tripid: 201,
-  //     duration: '45min',
-  //     location: 'kakkanad',
-  //     destination: 'edapally',
-  //     date: '3/8/17',
-  //     time: 9,
-  //     vehicle: 'honda',
-  //     price: 160
-  // },
-  // {
-  //     tripid: 202,
-  //     duration: '1hr',
-  //     location: 'chittoor',
-  //     destination: 'Kakkanad',
-  //     date: '4/8/17',
-  //     time: 7,
-  //     vehicle: 'maruti',
-  //     price: 200
+    this.mypool = [{
+      tripid: 201,
+      duration: '45min',
+      location: 'kakkanad',
+      destination: 'edapally',
+      date: '3/8/17',
+      time: 9,
+      vehicle: 'honda',
+      price: 160
+  },
+  {
+      tripid: 202,
+      duration: '1hr',
+      location: 'chittoor',
+      destination: 'Kakkanad',
+      date: '4/8/17',
+      time: 7,
+      vehicle: 'maruti',
+      price: 200
 
-  // },
-  // {
-  //     tripid: 203,
-  //     duration: '20min',
-  //     location: 'vazhakala',
-  //     destination: 'pipeline',
-  //     date: '9/7/17',
-  //     time: 12,
-  //     vehicle: 'swift',
-  //     price: 60
-  //   },
-  //   {
-  //      tripid: 204,
-  //     duration: '1hr',
-  //     location: 'Ernakulam',
-  //     destination: 'kaloor',
-  //     date: '3/8/17',
-  //     time: 2,
-  //     vehicle: 'BMW',
-  //     price: 300
-  //   }];
+  },
+  {
+      tripid: 203,
+      duration: '20min',
+      location: 'vazhakala',
+      destination: 'pipeline',
+      date: '9/7/17',
+      time: 12,
+      vehicle: 'swift',
+      price: 60
+    },
+    {
+       tripid: 204,
+      duration: '1hr',
+      location: 'Ernakulam',
+      destination: 'kaloor',
+      date: '3/8/17',
+      time: 2,
+      vehicle: 'BMW',
+      price: 300
+    }];
    }
 
    ngOnInit() {
   }
 
+  gotoDashboard(): void {
+    this.router.navigateByUrl('user/dashboard');
+  }
   /**
    * @desc To delete a row in the Table
    * @param Object mypool is passed to item
