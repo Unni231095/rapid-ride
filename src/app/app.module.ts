@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app.routing.module';
 import { GoogleSignInComponent } from 'angular-google-signin';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { LocalStorageService } from 'angular2-localstorage';
 
 import { ApicallService } from './utilities/apicall/apicall.service';
 import { RegistrationService } from './services/registration/registration.service';
@@ -63,7 +62,6 @@ import { VehicleRegistrationComponent } from './vehicleregistration/vehicleregis
     RegistrationService,
     VehicleregistrationService,
     CreatepoolService,
-    LocalStorageService
   ],
   bootstrap: [AppComponent]
 })

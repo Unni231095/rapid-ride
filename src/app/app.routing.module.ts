@@ -22,8 +22,7 @@ const routes: Routes = [
     { path: 'vehicleregistration', component: VehicleRegistrationComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'myprofile', component: MyprofileComponent },
-    {
-                path: 'user', component: UserComponent,
+    { path: 'user', component: UserComponent,
         children: [
             { path: 'dashboard', component: DashboardComponent },
             { path: 'mypool', component: MypoolComponent },

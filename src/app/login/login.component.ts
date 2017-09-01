@@ -64,7 +64,7 @@ export class LoginComponent implements AfterViewInit {
     private router: Router,
     private commonemailService: CommonemailService,
     private loginService: LoginService) {}
-    
+
   ngAfterViewInit() {
     this.googleInit();
   }
