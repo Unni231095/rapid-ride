@@ -20,20 +20,20 @@
           <div class="row uniform">
             <div class="6u 12u$(xmedium)">
               <label for="location">Location</label>
-              <input type="text" name="location" id="location" value="" placeholder="Starting From" />
+              <input type="text" name="location" id="location" [(ngModel)]="createPoolDetail.location" value="" placeholder="Starting From" />
             </div>
             <div class="6u 12u$(xmedium)">
               <label for="destination">Destination</label>
-              <input type="text" name="destination" id="destination" value="" placeholder="Final Stop" />
+              <input type="text" name="destination" id="destination" [(ngModel)]="createPoolDetail.destination" value="" placeholder="Final Stop" />
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
               <label for="date">Date</label>
-              <input type="date" name="date" id="date" value="" placeholder="Travel Date" />
+              <input type="date" name="date" id="date" [(ngModel)]="createPoolDetail.date" value="" placeholder="Travel Date" />
             </div>
             <div class="6u 12u$(xmedium)">
               <label for="time">Starting Time</label>
-              <input type="time" name="time" id="time" value="" placeholder="Starting Time" />
+              <input type="time" name="time" id="time" [(ngModel)]="createPoolDetail.time" value="" placeholder="Starting Time" />
             </div>
             <!-- Break -->
             <div class="12u$">

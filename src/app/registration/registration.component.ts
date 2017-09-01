@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RegistrationService } from '../services/registration/registration.service';
 
 @Component({
   selector: 'app-registration',
@@ -7,16 +8,39 @@ import { Router } from '@angular/router';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
+  private userDetail: any;
+  private prepopulate: any;
+  public gender = [{title: 'Male', value: 'male'}, {title: 'Female', value: 'female'}];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private registrationService: RegistrationService) { }
 
-  ngOnInit() {
+    ngOnInit() {
+      this.prepopulate = JSON.parse(localStorage.getItem('googleUser'));
+      this.userDetail = {
+        userName: this.prepopulate.ig,
+        emailID: this.prepopulate.U3,
+        phoneNumber: '',
+        age: '',
+        gender: '',
+        companyName: '',
+        licenseNumber: '',
+      };
+      console.log(this.prepopulate);
   }
-  gotoVehicleRegistration(): void {
-    let link = (['vehicleregistration', 1]);
-    this.router.navigate(link);
-  }
+
   gotoDashboard(): void {
-    this.router.navigateByUrl('user/dashboard');
+
+    this.registrationService.registerUser(this.userDetail, response => {
+      if (response.responseCode === 0) {
+        alert('Successfully Registered!');
+        this.router.navigateByUrl('login');
+      } else {
+        alert('Error Registering User! Please try after sometime');
+        this.router.navigateByUrl('registration');
+      }
+    }, error => {
+      // TODO Show toast message on server errors
+    });
   }
 }

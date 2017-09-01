@@ -19,4 +19,8 @@ export class UserComponent implements OnInit {
   gotoNotification() {
     this.router.navigateByUrl('user/notification');
   }
+  SignOut() {
+    localStorage.setItem('userDetail', null);
+    localStorage.setItem('googleUser', null);
+  }
 }

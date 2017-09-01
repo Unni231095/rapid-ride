@@ -24,39 +24,39 @@
         <form>
           <div class="row uniform">
             <div class="6u 12u$(xmedium)">
-              <label for="name">Vehicle Name</label>
-              <input type="text" name="name" id="name" value="" placeholder="Vehicle Name" />
+              <label for="vehicleName">Vehicle Name</label>
+              <input type="text" name="vehicleName" id="vehicleName" [(ngModel)]="vehicleDetail.vehicleName" value="" placeholder="Vehicle Name" />
             </div>
             <!-- Break -->
             <div class="6u$ 12u$(xmedium)">
               <label for="vehicleNumber">Vehicle Number</label>
-              <input type="text" name="vehicleNumber" id="vehicleNumber" value="" placeholder="Email" />
+              <input type="text" name="vehicleNumber" id="vehicleNumber" [(ngModel)]="vehicleDetail.vehicleNumber" value="" placeholder="Vehicle Number" />
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
               <label for="capacity">Number of Seats</label>
-              <input type="number" name="capacity" id="capacity" value="" placeholder="Seat Capacity" />
+              <input type="number" name="capacity" id="capacity" [(ngModel)]="vehicleDetail.capacity" value="" placeholder="Seat Capacity" />
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
               <label for="ac">AC</label>
               <div class="select-wrapper">
-                <select name="ac" id="ac">
+                <select name="ac" [(ngModel)]="vehicleDetail.ac" id="ac">
                             <option value="">- Select -</option>
-                            <option value="1">Yes</option>
-                            <option value="1">No</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
                 </select>
               </div>
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
-              <label for="yearofmanufacture">Year of Manufacture</label>
-              <input type="text" name="yearofmanufacture" id="yearofmanufacture" value="" placeholder="Year of Manufacture" />
+              <label for="manufactureYear">Year of Manufacture</label>
+              <input type="text" name="manufactureYear" id="manufactureYear" [(ngModel)]="vehicleDetail.manufactureYear" value="" placeholder="Year of Manufacture" />
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
-              <label for="insurancenumber">Insurance Number</label>
-              <input type="text" name="insurancenumber" id="insurancenumber" value="" placeholder="Insurance Number" />
+              <label for="insuranceNumber">Insurance Number</label>
+              <input type="text" name="insuranceNumber" id="insuranceNumber" [(ngModel)]="vehicleDetail.insuranceNumber" value="" placeholder="Insurance Number" />
             </div>
             <!-- Break -->
             <div class="12u$">

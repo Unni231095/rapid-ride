@@ -24,28 +24,47 @@
         <form>
           <div class="row uniform">
             <div class="6u 12u$(xmedium)">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" value="" placeholder="Name" />
+              <label for="userName">Name</label>
+              <input type="text" name="userName" id="userName" [(ngModel)]="userDetail.userName" value="" placeholder="Name" />
             </div>
             <!-- Break -->
             <div class="6u$ 12u$(xmedium)">
-              <label for="email">Email ID</label>
-              <input type="email" name="email" id="email" value="" placeholder="Email" />
+              <label for="emailID">Email ID</label>
+              <input type="email" name="emailID" id="emailID" [(ngModel)]="userDetail.emailID" value="" placeholder="Email" />
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
-              <label for="phonenumber">Mobile Number</label>
-              <input type="text" name="phonenumber" id="phonenumber" value="" placeholder="Mobile Number" />
+              <label for="phoneNumber">Mobile Number</label>
+              <input type="text" name="phoneNumber" id="phoneNumber" [(ngModel)]="userDetail.phoneNumber" value="" placeholder="Mobile Number" />
+            </div>
+           <!-- Break -->
+           <div class="6u 12u$(xmedium)">
+              <label for="age">Age</label>
+              <input type="number" name="age" id="age" [(ngModel)]="userDetail.age" value="" placeholder="Age" />
             </div>
             <!-- Break -->
             <div class="6u 12u$(xmedium)">
-              <label for="address">Address</label>
-              <input type="text" name="address" id="address" value="" placeholder="Address" />
+              <label for="gender">Gender</label>
+              <div class="select-wrapper">
+                <select name="gender" [(ngModel)]="userDetail.gender" id="gender">
+                  <option value="">- Select -</option>          
+                  <option *ngFor="let genders of gender" value="{{genders.value}}">{{genders.title}}</option>
+                </select>
+              </div>
+            </div>
+            <!-- Break -->
+            <div class="6u 12u$(xmedium)">
+              <label for="companyName">Company Name</label>
+              <input type="text" name="companyName" id="companyName" [(ngModel)]="userDetail.companyName" value="" placeholder="Company Name" />
+            </div>
+            <!-- Break -->
+            <div class="6u 12u$(xmedium)">
+              <label for="licenseNumber">License Number</label>
+              <input type="text" name="licenseNumber" id="licenseNumber" [(ngModel)]="userDetail.licenseNumber" value="" placeholder="License Number" />
             </div>
             <!-- Break -->
             <div class="12u$">
               <ul class="actions">
-                <li><input type="button" (click)="gotoVehicleRegistration()" value="Add Vehicle" /></li>
                 <li><input type="submit" (click)="gotoDashboard()" value="Register" /></li>
                 <li><input type="reset" value="Reset" class="alt" /></li>
               </ul>
